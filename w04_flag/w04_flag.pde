@@ -3,11 +3,11 @@
 //Period 5
 
 size(500, 510);
-background(255);
+background(#E3A4FA);
 strokeWeight(5);
 
 stroke(0);
-fill(234, 191, 171);
+fill(#70C46F);
 rect(225, 300, 50, 35);//neck
 
 //cat ears
@@ -21,7 +21,7 @@ triangle(310,165,350,190,370,165);
 stroke(0);
 
 strokeWeight(10);
-fill(234, 191, 171);
+fill(#70C46F);
 circle(250, 200, 200);//face
 noFill();
 strokeWeight(5);
@@ -38,16 +38,28 @@ fill(100, 73, 33);
 ellipse(215, 185, 25, 40);//left eye
 ellipse(285, 185, 25, 40);//right eye
 
-fill(255);
+fill(255,0,0);
 ellipse(215, 185, 15, 20);//left eye
 ellipse(285, 185, 15, 20);//right eye
 
-stroke(200, 0, 0);
-line(200, 255, 310, 245);//mouth
+ellipse(250,250,50,80);//nose
+//rect();//box on nose
+
+//stroke(200, 0, 0);
+//line(200, 255, 310, 245);//mouth
 
 stroke(0);
 fill(#27F2E3);
 rect(140, 325, 220, 185);//body
+
+//tshirt arm thingy
+triangle(137,331,140,400,90,400);
+triangle(363,331,360,400,410,400);
+
+//arms
+fill(#70C46F);
+rect(110,400,30,1000);
+rect(360,400,30,1000);
 
 //hat
 stroke(0);
@@ -59,28 +71,31 @@ rect(190,40,120,50);
 
 
 //middle question mark 
-fill(255);
+fill(#E3A4FA);
 stroke(0, 255, 0);
 circle(250, 20, 30);
-stroke(255);
+fill(#E3A4FA);
+stroke(#E3A4FA);
 square(215, 20, 30);
 
 
 //left question mark
-fill(255);
+fill(#E3A4FA);
 stroke(255, 0, 0);
 circle(170, 55, 30);
-stroke(255);
+fill(#E3A4FA);
+stroke(#E3A4FA);
 square(135, 55, 30);
 stroke(255, 0, 0);
 line(170, 70, 170, 80);
 circle(170, 95, 5);
 
 //right question mark
-fill(255);
+fill(#E3A4FA);
 stroke(0, 0, 255);
 circle(330, 55, 30);
-stroke(255);
+fill(#E3A4FA);
+stroke(#E3A4FA);
 square(295, 55, 30);
 stroke(0, 0, 255);
 line(330, 70, 330, 80);
@@ -96,6 +111,7 @@ circle(250, 60, 5);
 stroke(0);
 fill(0);
 rect(290, 45, 20, 40);
+
 
 int x=150;
 int y=355;
@@ -134,3 +150,9 @@ stroke(#C68485);
 strokeWeight(3);
 fill(#F0BABF);
 circle(100+x, 133+y, 22);
+
+noFill();
+stroke(0);
+arc(215, 135, 40, 15, PI, TWO_PI);
+arc(280, 135, 40, 15, PI, TWO_PI);
+//arc();
